@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="bg-gray-300 h-[100vh] flex gap-4 p-5">
+    <div class="bg-gray-200 w-1/4 p-2 rounded-xl h-fit">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl">Open</h1>
+        <i class="text-xl pr-1 text-gray-500 fas fa-ellipsis"></i>
+      </div>
+      <div class="taskList pt-5 flex flex-col gap-1 pb-2">
+      </div>
+      <div class="addTask flex justify-between items-center scroll-py-1 px-1 cursor-pointer">
+        <p class="text-xl text-gray-400">
+          <i class="fa-solid fa-plus"></i>
+          <span>Добавить карточки</span>
+        </p>
+        <i class="text-xl text-gray-400 fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="bg-gray-200 w-1/4 p-2 rounded-xl h-fit">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl">Pending</h1>
+        <i class="text-xl pr-1 text-gray-500 fas fa-ellipsis"></i>
+      </div>
+      <div class="pt-5 taskList flex flex-col gap-1 pb-2">
+      </div>
+      <div class="flex addTask justify-between items-center scroll-py-1 px-1 cursor-pointer">
+        <p class="text-xl text-gray-400">
+          <i class="fa-solid fa-plus"></i>
+          <span>Добавить карточки</span>
+        </p>
+        <i class="text-xl text-gray-400 fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="bg-gray-200 w-1/4 p-2 rounded-xl h-fit">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl">Inproge</h1>
+        <i class="text-xl pr-1 text-gray-500 fas fa-ellipsis"></i>
+      </div>
+      <div class="pt-5 taskList flex flex-col gap-1 pb-2">
+      </div>
+      <div class="flex addTask justify-between items-center scroll-py-1 px-1 cursor-pointer">
+        <p class="text-xl text-gray-400">
+          <i class="fa-solid fa-plus"></i>
+          <span>Добавить карточки</span>
+        </p>
+        <i class="text-xl text-gray-400 fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="bg-gray-200 w-1/4 p-2 rounded-xl h-fit">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl">Complete</h1>
+        <i class="text-xl pr-1 text-gray-500 fas fa-ellipsis"></i>
+      </div>
+      <div class="pt-5 taskList flex flex-col gap-1 pb-2">
+      </div>
+      <div class="flex addTask justify-between items-center scroll-py-1 px-1 cursor-pointer">
+        <p class="text-xl text-gray-400">
+          <i class="fa-solid fa-plus"></i>
+          <span>Добавить карточки</span>
+        </p>
+        <i class="text-xl text-gray-400 fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+  <div id="madal"
+    class="w-full hidden h-full fixed top-0 left-0 bg-green-400 bg-opacity-60 justify-center items-center">
+    <div class="w-1/4 bg-gray-200 p-3 rounded h-[200px]">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl">Madal</h1>
+        <button>
+          <i id="close" class="text-xl fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form id="form" class="py-4 flex flex-col gap-2">
+        <input name="task_name" type="text" placeholder="Task name"
+          class="w-full py-1 text-xl px-2 outline-none border">
+        <select name="selected" id="" class="w-full p-1 text-xl outline-none">
+          <option value="1">Open</option>
+          <option value="2">Pending</option>
+          <option value="3">Inproge</option>
+          <option value="4">Complete</option>
+        </select>
+        <button type="submit" class="bg-blue-600 text-xl text-white py-1">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
